@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cautruc_dieukien1_06</title>
+</head>
+<body>
+</body>
+<script>
+    let  a = +prompt("Nhap vao doanh so ban hang:");
+    while (a < 0) {
+        a = +prompt("Nhap lai doanh so ban hang:");
+    }
+    if (a <= 100000000) {
+        alert("Ban duoc nhan hoa hong 1% la: " + 1*a/100);
+    } else if (a <= 1000000000) {
+        alert("Ban duoc nhan hoa hong 5% la: " + 5*a/100);
+    } else {
+        alert("Ban duoc nhan hoa hong 10% la: " + 10*a/100);
+    }
+</script>
+</html>

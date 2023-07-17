@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+</body>
+<script>
+  let a = +prompt("Nhập số tiền:");
+  let b = +prompt("Số tháng cho vay:");
+  let c = +prompt("Lãi bao nhiêu % trên 1 tháng:");
+  let d;
+  for (let i = 1; i <= b; i++) {
+    d = a * Math.pow(1+c,i);
+  }
+  document.write(`Tiền sau ${b} tháng cho vay là: ${d}`);
+</script>
+</html>

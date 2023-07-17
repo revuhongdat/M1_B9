@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cautruc_dieukien1_05</title>
+</head>
+<body>
+</body>
+<script>
+  let  a = +prompt("Nhap vao diem kiem tra mieng:");
+  while (a < 0 || a > 10) {
+    a = +prompt("Nhap lai diem kiem tra mieng:");
+  }
+  let  b = +prompt("Nhap vao diem kiem tra 15p:");
+  while (b < 0 || b > 10) {
+    b = +prompt("Nhap lai diem kiem tra 15p:");
+  }
+  let  c = +prompt("Nhap vao diem kiem tra giua ky:");
+  while (c < 0 || c > 10) {
+    c = +prompt("Nhap lai diem kiem tra giua ky:");
+  }
+  let  d = +prompt("Nhap vao diem kiem tra giua ky:");
+  while (d < 0 || d > 10) {
+    d = +prompt("Nhap lai diem kiem tra giua ky:");
+  }
+  dtb = (a + b + c + d*2 )/5;
+  if (dtb < 5) {
+    alert("Hoc sinh trung binh!");
+  } else if (dtb < 8) {
+    alert("Hoc sinh kha!");
+  } else {
+    alert("Hoc sinh gioi!");
+  }
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do_you_love_me</title>
+</head>
+<style>
+  h1 {
+    background-color: violet;
+    width: 500px;
+    height: 100px;
+    font-weight: bolder;
+    font-size: 60px;
+    text-align: center;
+  }
+  .yes {
+    width: 50px;
+    height: 20px;
+    text-align: center;
+  }
+  button {
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+  }
+  .yes {
+    top: 200px;
+    left: 100px;
+  }
+  .no {
+    top: 200px;
+    left: 300px;
+  }
+</style>
+<body>
+<h1>Do you love me?</h1>
+<button class="yes" id="y" onclick="yes()">Yes</button>
+<button class="no" id="n" onmouseover="no()">No</button>
+</body>
+<script>
+  function yes() {
+    alert('I LOVE YOU TOO <3')
+  }
+  function no() {
+    document.getElementById('n').style.left = Math.random() * window.innerWidth + 'px';
+    document.getElementById('n').style.top = Math.random() * window.innerWidth + 'px';
+  }
+</script>
+</html>

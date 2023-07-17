@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game_puzzle</title>
+</head>
+<body>
+<img id="anh1" onclick="change1('anh1');win()" src="http://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg" width="800px" height="160px" alt="error">
+<img id="anh2" onclick="change2('anh2');win()" src="http://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg" width="800px" height="160px" alt="error">
+<img id="anh3" onclick="change3('anh3');win()" src="http://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg" width="800px" height="160px" alt="error">
+<img id="anh4" onclick="change4('anh4');win()" src="http://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg" width="800px" height="160px" alt="error">
+<img id="anh5" onclick="change5('anh5');win()" src="http://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg" width="800px" height="160px" alt="error">
+</body>
+<script>
+    function change1(x) {
+        let url = document.getElementById(x).src;
+        switch (url) {
+            case "http://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg";
+                break;
+            case "http://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg";
+                break;
+            case "http://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg";
+                break;
+        }
+    }
+function change2(x) {
+        let url = document.getElementById(x).src;
+        switch (url) {
+            case "http://demo.codegym.vn/8/puzzlegame/img/monkey_part2x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg";
+                break;
+            case "http://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg";
+                break;
+            case "http://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/monkey_part2x1.jpg";
+                break;
+        }
+    }
+function change3(x) {
+        let url = document.getElementById(x).src;
+        switch (url) {
+            case "http://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg";
+                break;
+            case "http://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg";
+                break;
+            case "http://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg";
+                break;
+        }
+    }
+function change4(x) {
+        let url = document.getElementById(x).src;
+        switch (url) {
+            case "http://demo.codegym.vn/8/puzzlegame/img/monkey_part4x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg";
+                break;
+            case "http://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg";
+                break;
+            case "http://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/monkey_part4x1.jpg";
+                break;
+        }
+    }
+function change5(x) {
+        let url = document.getElementById(x).src;
+        switch (url) {
+            case "http://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg";
+                break;
+            case "http://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg";
+                break;
+            case "http://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg":
+                document.getElementById(x).src = "http://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg";
+                break;
+        }
+    }
+function win() {
+        let img1 = document.getElementById('anh1').src;
+        let img2 = document.getElementById('anh2').src;
+        let img3 = document.getElementById('anh3').src;
+        let img4 = document.getElementById('anh4').src;
+        let img5 = document.getElementById('anh5').src;
+        winner = img1 + img2 + img3 + img4 + img5;
+        switch (winner) {
+            case "http://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpghttp://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpghttp://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpghttp://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpghttp://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg":
+                alert("Congratulations on making THE CAT picture");
+                break;
+            case "http://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpghttp://demo.codegym.vn/8/puzzlegame/img/monkey_part2x1.jpghttp://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpghttp://demo.codegym.vn/8/puzzlegame/img/monkey_part4x1.jpghttp://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg":
+                alert("Congratulations on making THE MONKEY picture");
+                break;
+            case "http://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpghttp://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpghttp://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpghttp://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpghttp://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg":
+                alert("Congratulations on making THE PANDA picture");
+                break;
+        }
+}
+</script>
+</html>

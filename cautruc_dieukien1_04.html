@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cautruc_dieukien1_04</title>
+</head>
+<body>
+</body>
+<script>
+    let a = +prompt("Nhap vao so nguyen a:");
+    while (a != parseInt(a)) {
+        a = +prompt("So ban vua nhap khong phai so nguyen, vui long nhap lai a:");
+    }
+    let b = +prompt("Nhap vao so nguyen b:");
+    while (b != parseInt(b)) {
+        b = +prompt("So ban vua nhap khong phai so nguyen, vui long nhap lai b:");
+    }
+    let c = +prompt("Nhap vao so nguyen c:");
+    while (c != parseInt(c)) {
+        c = +prompt("So ban vua nhap khong phai so nguyen, vui long nhap lai c:");
+    }
+    if (a > b && a > c) {
+        alert("So nguyen lon nhat la: " + a);
+    } else if (b > c) {
+        alert("So nguyen lon nhat la: " + b);
+    } else {
+        alert("So nguyen lon nhat la: " + c);
+    }
+</script>
+</html>

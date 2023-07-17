@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cautruc_dieukien2_06</title>
+</head>
+<body>
+</body>
+<script>
+  let a = +prompt("Nhập hệ số a của phương trình ax + b = 0 :");
+  let b = +prompt("Nhập hệ số b của phương trình ax + b = 0 :");
+  if (a===0 && b!==0) {
+    alert("PT vô nghiệm!");
+  }
+  if (a===0 && b===0) {
+    alert("PT vô số nghiệm!");
+  }
+  if (a!==0) {
+    alert("PT có nghiệm duy nhất là: " + -b/a);
+  }
+</script>
+</html>

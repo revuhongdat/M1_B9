@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+</body>
+<script>
+    let a = +prompt("Nhập vào thu nhập của bạn theo vnđ:");
+    let a1;
+    if (a<=5000000) {
+        a1 = 0.05*a;
+
+    } else if (a<=10000000) {
+        a1 = 0.1*a-250000;
+    } else if (a<=18000000) {
+        a1 = 0.15*a-750000;
+    } else if (a<=32000000) {
+        a1 = 0.2*a-1650000;
+    } else if (a<=52000000) {
+        a1 = 0.25*a-3250000;
+    } else if (a<=80000000) {
+        a1 = 0.3*a-5850000;
+    } else {
+        a1 = 0.35*a-9850000;
+    }
+    alert("Thuế TNCN phải nộp là: " + a1 + " vnđ");
+</script>
+</html>

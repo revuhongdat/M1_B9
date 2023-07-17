@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gfc</title>
+</head>
+<style>
+  table {
+    position: absolute;
+    left: 500px;
+    top: 20px;
+    border-collapse: collapse;
+    height: 300px;
+  }
+  .text {
+    text-align: center;
+  }
+  .art {
+    width: 200px;
+    height: 100px;
+  }
+  .b1 {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+
+  }
+.b2 {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 104px;
+  }
+.b3 {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 207px;
+  }
+</style>
+<body>
+<table border="1">
+  <tr>
+    <td id="td1" class="art"><button id="bt1" class="b1" onclick="p('bt1');move1();color1()"></button></td>
+    <td class="text">GOOD</td>
+  </tr>
+  <tr>
+    <td id="td2" class="art"><button id="bt2" class="b2" onclick="p('bt2');move2();color2()"></button></td>
+    <td class="text">CHEAP</td>
+  </tr>
+  <tr>
+    <td id="td3" class="art"><button id="bt3" class="b3" onclick="p('bt3');move3();color3()"></button></td>
+    <td class="text">FAST</td>
+  </tr>
+</table>
+</body>
+<script>
+  function p(x) {
+    let ax = document.getElementById(x).style.left;
+    if (ax==='0px') {
+      document.getElementById(x).style.left = '100px';
+    } else {
+      document.getElementById(x).style.left = '0px';
+    }
+  }
+  function move1() {
+    let b1 = document.getElementById('bt1').style.left;
+    let b2 = document.getElementById('bt2').style.left;
+    let b3 = document.getElementById('bt3').style.left;
+    if (b1 === b2) {
+      if (b1 === b3) {
+        if (b3 === '0px') {
+          document.getElementById('bt3').style.left = '100px';
+        } else {
+          document.getElementById('bt3').style.left = '0px';
+        }
+      }
+    }
+  }
+  function move2() {
+    let b1 = document.getElementById('bt1').style.left;
+    let b2 = document.getElementById('bt2').style.left;
+    let b3 = document.getElementById('bt3').style.left;
+    if (b2 === b3) {
+      if (b2 === b1) {
+        if (b1 === '0px') {
+          document.getElementById('bt1').style.left = '100px';
+        } else {
+          document.getElementById('bt1').style.left = '0px';
+        }
+      }
+    }
+  }
+  function move3() {
+    let b1 = document.getElementById('bt1').style.left;
+    let b2 = document.getElementById('bt2').style.left;
+    let b3 = document.getElementById('bt3').style.left;
+    if (b3 === b1) {
+      if (b3 === b2) {
+        if (b2 === '0px') {
+          document.getElementById('bt2').style.left = '100px';
+        } else {
+          document.getElementById('bt2').style.left = '0px';
+        }
+      }
+    }
+  }
+  function color1() {
+    let c1 = document.getElementById('bt1').style.left;
+    if (c1==='0px') {
+      document.getElementById('bt1').style.backgroundColor = 'darkgrey';
+      document.getElementById('td1').style.backgroundColor = 'darkgrey';
+    } else {
+      document.getElementById('bt1').style.backgroundColor = 'green';
+      document.getElementById('td1').style.backgroundColor = 'green';
+    }
+  }
+  function color2() {
+    let c2 = document.getElementById('bt2').style.left;
+    if (c2==='0px') {
+      document.getElementById('bt2').style.backgroundColor = 'darkgrey';
+      document.getElementById('td2').style.backgroundColor = 'darkgrey';
+    } else {
+      document.getElementById('bt2').style.backgroundColor = 'blue';
+      document.getElementById('td2').style.backgroundColor = 'blue';
+    }
+  }
+  function color3() {
+    let c3 = document.getElementById('bt3').style.left;
+    if (c3==='0px') {
+      document.getElementById('bt3').style.backgroundColor = 'darkgrey';
+      document.getElementById('td3').style.backgroundColor = 'darkgrey';
+    } else {
+      document.getElementById('bt3').style.backgroundColor = 'red';
+      document.getElementById('td3').style.backgroundColor = 'red';
+    }
+  }
+</script>
+</html>
